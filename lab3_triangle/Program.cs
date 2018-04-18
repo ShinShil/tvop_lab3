@@ -13,8 +13,7 @@ namespace lab3_triangle
             int command;
             do
             {
-                Menu.Print();
-                command = Menu.Read();
+                command = Dialogs.Menu();
                 Commands.ExecuteCommand(command);
             } while (command != 2);
         }
