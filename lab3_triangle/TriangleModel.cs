@@ -1,15 +1,39 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lab3_triangle
 {
     class TriangleModel
     {
-        public int A { get; set; }
-        public int B { get; set; }
-        public int C { get; set; }
+        public Int64 A { get; set; }
+        public Int64 B { get; set; }
+        public Int64 C { get; set; }
+
+        public bool Valid {
+            get
+            {
+                return A + B > C && A + C > B && C + B > A;
+            }
+        }
+        
+        public bool isEqualeteral {
+            get {
+                return A == B && A == C && B == C;
+            }
+        }
+
+        public bool isIsocseless {
+            get
+            {
+                return !isEqualeteral && (A == B || A == C || B == C);
+            }
+        }
+
+        public bool isVersatile
+        {
+            get
+            {
+                return !isEqualeteral && !isIsocseless;
+            }
+        }
     }
 }

@@ -1,30 +1,19 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace lab3_triangle
 {
     class Dialogs
     {
-        public static int Menu()
+        public static Int64 Menu()
         {
-            Console.WriteLine("Choose an action:");
-            Console.WriteLine("You must enter `1` or `2`.");
-            Console.WriteLine("1: Compare sides.");
-            Console.WriteLine("2: Exit.");
-            return ReadNumber();
+            return ReadNumber(Strings.MainMenu + "\n");
         }
 
         public static TriangleModel Triangle()
         {
-            Console.WriteLine("Enter the first side A: ");
-            int a = ReadNumber();
-            Console.WriteLine("Enter the second side B: ");
-            int b = ReadNumber();
-            Console.WriteLine("Enter the third side B: ");
-            int c = ReadNumber();
+            Int64 a = ReadNumber(Strings.EnterSideA);
+            Int64 b = ReadNumber(Strings.EnterSideB);
+            Int64 c = ReadNumber(Strings.EnterSideC);
             return new TriangleModel
             {
                 A = a,
@@ -33,9 +22,40 @@ namespace lab3_triangle
             };
         }
 
-        private static int ReadNumber()
+        private static Int64 ReadNumber(string message)
         {
-            return int.Parse(Console.ReadLine());
+            NumberParser parser;
+            while (true)
+            {
+                Console.Write(message);
+                parser = new NumberParser(Console.ReadLine());
+                Console.WriteLine();
+                if (parser.IsFloat)
+                {
+                    Console.WriteLine(Strings.ErrorNumberFractional);
+                }
+                else if (parser.IsComplex)
+                {
+                    Console.WriteLine(Strings.ErrorNumberComplex);
+                }
+                else if (parser.isInvalidInput)
+                {
+                    Console.WriteLine(Strings.ErrorNumberContainsInvalidSymbols);
+                }
+                else if (parser.IsNegative)
+                {
+                    Console.WriteLine(Strings.ErrorNumberNegative);
+                }
+                else if (parser.IsTooBig)
+                {
+                    Console.WriteLine(Strings.ErrorNumberTooBig);
+                } else
+                {
+                    break;
+                }
+                Console.WriteLine();
+            }
+            return parser.Value;
         }
     }
 }

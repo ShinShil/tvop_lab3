@@ -169,6 +169,18 @@ namespace lab3_triangle {
         }
         
         /// <summary>
+        ///   Ищет локализованную строку, похожую на Choose an action:
+        ///You must enter ‘1’ or ‘2’.
+        ///1: Compare sides. 
+        ///2: Exit..
+        /// </summary>
+        internal static string MainMenu {
+            get {
+                return ResourceManager.GetString("MainMenu", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Ищет локализованную строку, похожую на Versatile triangle..
         /// </summary>
         internal static string VersatileTriangle {

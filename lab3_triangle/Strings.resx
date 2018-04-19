@@ -153,6 +153,12 @@
   <data name="IsoscelesTriangle" xml:space="preserve">
     <value>Isosceles triangle.</value>
   </data>
+  <data name="MainMenu" xml:space="preserve">
+    <value>Choose an action:
+You must enter ‘1’ or ‘2’.
+1: Compare sides. 
+2: Exit.</value>
+  </data>
   <data name="VersatileTriangle" xml:space="preserve">
     <value>Versatile triangle.</value>
   </data>

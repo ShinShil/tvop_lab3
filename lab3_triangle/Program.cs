@@ -10,7 +10,7 @@ namespace lab3_triangle
     {
         static void Main(string[] args)
         {
-            int command;
+            Int64 command;
             do
             {
                 command = Dialogs.Menu();
