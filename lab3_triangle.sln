@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.27428.2037
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3_triangle", "lab3_triangle\lab3_triangle.csproj", "{C4EB35E4-98AD-4CD3-8EB3-100F2F457706}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3_triangle_test", "lab3_triangle_test\lab3_triangle_test.csproj", "{9B4AF71A-4506-4125-BC3B-CE79AE209D4B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab3_triangle_test_nunit", "lab3_triangle_test_nunit\lab3_triangle_test_nunit.csproj", "{F65B1633-1913-41D0-962A-9AAEA2B0C994}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{C4EB35E4-98AD-4CD3-8EB3-100F2F457706}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4EB35E4-98AD-4CD3-8EB3-100F2F457706}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4EB35E4-98AD-4CD3-8EB3-100F2F457706}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B4AF71A-4506-4125-BC3B-CE79AE209D4B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B4AF71A-4506-4125-BC3B-CE79AE209D4B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B4AF71A-4506-4125-BC3B-CE79AE209D4B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B4AF71A-4506-4125-BC3B-CE79AE209D4B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F65B1633-1913-41D0-962A-9AAEA2B0C994}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F65B1633-1913-41D0-962A-9AAEA2B0C994}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F65B1633-1913-41D0-962A-9AAEA2B0C994}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F65B1633-1913-41D0-962A-9AAEA2B0C994}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
